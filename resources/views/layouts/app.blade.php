@@ -220,6 +220,11 @@
         transform: rotate(45deg);
     }
 </style>
+<style>
+html{
+    scroll-behavior:smooth;
+}
+</style>
 </head>
 
 
@@ -565,6 +570,70 @@ All Rights Reserved.
 
 </div>
 
+
+<!-- BACK TO TOP -->
+<button
+    id="backToTop"
+    onclick="scrollToTop()"
+    class="fixed bottom-6 right-6 z-[9998]
+           w-12 h-12
+           bg-blue-900 hover:bg-blue-800
+           text-white
+           rounded-full
+           shadow-xl
+           flex items-center justify-center
+           opacity-0 invisible
+           transition-all duration-300">
+
+    ↑
+
+</button>
+
+<script>
+
+const backToTop =
+    document.getElementById('backToTop');
+
+
+window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 300) {
+
+        backToTop.classList.remove(
+            'opacity-0',
+            'invisible'
+        );
+
+        backToTop.classList.add(
+            'opacity-100'
+        );
+
+    }
+
+    else {
+
+        backToTop.classList.add(
+            'opacity-0',
+            'invisible'
+        );
+
+    }
+
+});
+
+
+function scrollToTop(){
+
+    window.scrollTo({
+
+        top:0,
+        behavior:'smooth'
+
+    });
+
+}
+
+</script>
 <script async src="https://www.instagram.com/embed.js"></script>
 <script>
     window.addEventListener("load", function () {

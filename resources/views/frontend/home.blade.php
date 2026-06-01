@@ -688,8 +688,7 @@ Become A Volunteer
 
 <!-- LIVE CAMPAIGN SOCIAL HUB -->
 <div id="portraitPanel"
-     class="portrait-panel fixed bottom-6 right-6 w-[360px] z-[9999] bg-white rounded-2xl shadow-2xl overflow-hidden">
-
+     class="portrait-panel fixed bottom-24 right-6 w-[360px] z-[9999] bg-white rounded-2xl shadow-2xl overflow-hidden">
     <!-- CLOSE BUTTON -->
     <button
         type="button"
@@ -708,44 +707,7 @@ Become A Volunteer
 
         <p class="text-sm text-gray-600 mt-2">
             Follow real-time updates, engagements, and movement activities.
-        </p>
-
-        <!-- PLATFORM TAGS -->
-        <!-- <div class="mt-4 flex gap-2 flex-wrap">
-
-            <span class="px-3 py-1 text-xs font-bold bg-pink-100 text-pink-600 rounded-full">
-                Instagram
-            </span>
-
-            <span class="px-3 py-1 text-xs font-bold bg-blue-100 text-blue-600 rounded-full">
-                X (Twitter)
-            </span>
-
-            <span class="px-3 py-1 text-xs font-bold bg-green-100 text-green-600 rounded-full">
-                Facebook
-            </span>
-
-        </div> -->
-
-        <!-- INSTAGRAM EMBED -->
-        <!-- <div class="mt-5">
-
-            <p class="text-xs uppercase tracking-[3px] font-bold text-pink-600 mb-2">
-                Latest on Instagram
-            </p>
-
-            <div class="rounded-xl overflow-hidden border">
-
-                <blockquote class="instagram-media"
-                    data-instgrm-permalink="https://www.instagram.com/expysuave/"
-                    data-instgrm-version="14"
-                    style="width:100%;">
-
-                </blockquote>
-
-            </div>
-
-        </div> -->
+        </p>        
 
         <!-- LIVE UPDATES -->
         <div class="mt-6 space-y-3">
