@@ -4,7 +4,17 @@
 
 
 <!-- HERO -->
+<div class="bg-red-700 text-white py-2 overflow-hidden">
 
+    <div class="animate-marquee whitespace-nowrap font-semibold">
+
+        📢 OFFICIAL STATEMENT FROM KEHINDE OGUNNIYI —
+        Insecurity in Oyo State: Time for Collective Responsibility and Action —
+        Click "Official Statement" to read more.
+
+    </div>
+
+</div>
 <!-- HERO -->
 <section class="relative reveal min-h-screen flex items-center overflow-hidden pt-24">
 
@@ -715,6 +725,20 @@ Become A Volunteer
             <!-- <p class="text-xs uppercase tracking-[3px] font-bold text-slate-500">
                 Latest Updates
             </p> -->
+            <div
+                onclick="openPressModal()"
+                class="p-3 bg-slate-50 rounded-xl border cursor-pointer hover:bg-slate-100 transition">
+
+                <p class="text-sm text-slate-700">
+                    📢 OFFICIAL STATEMENT FROM KEHINDE OGUNNIYI —
+                    Insecurity in Oyo State: Time for Collective Responsibility and Action.
+                </p>
+
+                <span class="mt-2 inline-block text-xs font-bold text-blue-900">
+                    Read Full Statement →
+                </span>
+
+            </div>
 
             <div class="p-3 bg-slate-50 rounded-xl border">
                 <p class="text-sm text-slate-700">
@@ -730,12 +754,12 @@ Become A Volunteer
                 <span class="text-xs text-gray-400">2h ago</span>
             </div>
 
-            <div class="p-3 bg-slate-50 rounded-xl border">
+            <!-- <div class="p-3 bg-slate-50 rounded-xl border">
                 <p class="text-sm text-slate-700">
                     📢 Strengthening grassroots engagement statewide.
                 </p>
                 <span class="text-xs text-gray-400">Yesterday</span>
-            </div>
+            </div> -->
 
         </div>
 
@@ -756,6 +780,86 @@ Become A Volunteer
                 Events
 
             </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="pressModal"
+     class="fixed inset-0 z-[10000]
+            hidden
+            items-center
+            justify-center
+            bg-black/80
+            backdrop-blur-sm">
+
+    <div class="bg-white
+                rounded-3xl
+                shadow-2xl
+                max-w-5xl
+                w-full
+                mx-6
+                max-h-[90vh]
+                overflow-hidden">
+
+        <!-- HEADER -->
+        <div class="bg-blue-900 text-white p-6 flex justify-between items-center">
+
+            <div>
+
+                <p class="uppercase tracking-[4px] text-xs font-bold">
+                    Official Statement
+                </p>
+
+                <h2 class="text-2xl font-black mt-1">
+                    Insecurity in Oyo State:
+                    Time for Collective Responsibility and Action
+                </h2>
+
+            </div>
+
+            <button
+                onclick="closePressModal()"
+                class="text-4xl leading-none">
+
+                &times;
+
+            </button>
+
+        </div>
+
+        <!-- BODY -->
+        <div class="p-8 overflow-y-auto max-h-[75vh]">
+
+            <div class="flex items-center gap-4 mb-8">
+
+                <img
+                    src="{{ asset('home/mko-pic-2.png') }}"
+                    class="w-20 h-20 rounded-full object-cover">
+
+                <div>
+
+                    <h3 class="font-black text-xl">
+                        Matthew Kehinde Ogunniyi
+                    </h3>
+
+                    <p class="text-gray-500">
+                        Concerned Citizen and Son of Oyo State
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FULL STATEMENT HERE -->
+
+            <div class="prose max-w-none leading-8 text-gray-700">
+
+                <!-- Paste the entire statement here -->
+
+            </div>
 
         </div>
 
@@ -786,6 +890,34 @@ document
     .classList.remove('show');
 
 });
+
+</script>
+
+<script>
+
+function openPressModal() {
+
+    document
+        .getElementById('pressModal')
+        .classList.remove('hidden');
+
+    document
+        .getElementById('pressModal')
+        .classList.add('flex');
+
+}
+
+function closePressModal() {
+
+    document
+        .getElementById('pressModal')
+        .classList.add('hidden');
+
+    document
+        .getElementById('pressModal')
+        .classList.remove('flex');
+
+}
 
 </script>
 @endsection

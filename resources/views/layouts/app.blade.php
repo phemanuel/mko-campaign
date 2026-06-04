@@ -341,6 +341,26 @@ items-center">
    Join Movement
 </a>
 
+<!-- OFFICIAL STATEMENT BUTTON -->
+<button
+    onclick="openPressModal()"
+    class="
+    flex items-center gap-2
+    bg-red-700 hover:bg-red-800
+    text-white
+    text-xs
+    font-bold
+    px-3 py-2
+    rounded-md
+    shadow-sm
+    transition">
+
+    <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+
+    Press Release
+
+</button>
+
 
 </div>
 
